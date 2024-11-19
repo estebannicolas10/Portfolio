@@ -32,38 +32,7 @@ def main(page: ft.Page):
     page.on_resized = page_resize
     def pan_update(e: ft.DragUpdateEvent):
         pass
-    # def redimensionamiento(e):
-    #     global ancho_pagina
-        
-    #     ancho_pagina=e.width
-    #     # print(ancho_pagina)
-    #     gradient_color_txt.begin=(0,int(ancho_pagina/2))
-    #     gradient_color_txt.end=(ancho_pagina,int(ancho_pagina/2))
-    #     page.update()
-    # cp = ft.canvas.Canvas(
-    #     [
-            
-    #         ft.canvas.Fill(
-                
-    #             ft.Paint(
-                    
-    #                 color='transparent'
-    #             )
-    #         ),
-    #     ],
-    #     content=ft.GestureDetector(
-        
-    #         # on_pan_start=pan_start,
-    #         on_pan_update=pan_update,
-    #         drag_interval=10,
-    #     ),
-    #     height=0,
-    #     expand=0,
-    #     expand_loose=True,
-    #     resize_interval=100,
-    #     on_resize=lambda _:redimensionamiento(_),
-        
-    # )
+    
 
     def create_blurred_card(title: str, content: str):
         """Crea un recuadro con fondo transparente y efecto de blur."""
